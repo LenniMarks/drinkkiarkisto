@@ -1,0 +1,369 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.header {
+  max-height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(43, 199, 191, 0.25),
+      rgba(43, 199, 191, 0.25)
+    ),
+    url("images/tausta4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+#mainheader {
+  font-size: 40px;
+  color: #fff;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4%;
+}
+nav img {
+  width: 150px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+.container {
+  width: 80%;
+  overflow-y: scroll;
+  min-height: 72vh;
+  max-height: 72vh;
+  margin: 0 auto;
+  margin-top: 2%;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 40px 30px;
+  text-align: center;
+}
+#otsikko {
+  color: #111;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding-bottom: 1%;
+  font-size: 35px;
+}
+.alaviiva {
+  border-bottom: solid 3px #111;
+}
+.haku {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  background: rgba(255, 255, 255, 0.2);
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+  margin-bottom: 0.2%;
+}
+.haku input {
+  border: 2px solid #000000;
+  background: rgb(211, 211, 211, 0.15);
+  border-radius: 50px;
+  flex: 1;
+  outline: none;
+  padding: 24px 30px;
+  font-size: 20px;
+  color: #000000;
+}
+::placeholder {
+  color: #000000;
+}
+#juomat {
+  max-width: 100%;
+}
+#juomat a {
+  display: inline-block;
+  margin: 1%;
+}
+
+.laatikot {
+  float: left;
+  transition: 0.5s;
+  color: #000000;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 150px;
+  height: 120px;
+}
+.laatikot p {
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+.laatikot:hover {
+  color: #ffffff;
+  background-color: rgb(34, 34, 34);
+}
+.drinkki {
+  text-decoration: none;
+  color: black;
+}
+.haku2 {
+  display: inline-block;
+  transition: 0.5s;
+  color: #000000;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-decoration: none;
+  border: none;
+  background-color: #fff;
+}
+.haku2:hover {
+  color: #ffffff;
+  background-color: rgb(34, 34, 34);
+}
+.footer {
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 8%;
+}
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 400px) and (orientation: portrait) {
+  .header {
+    min-height: 120vh;
+    overflow-x: hidden;
+  }
+  .nav-links ul li {
+    display: block;
+    text-align: center;
+  }
+  .nav-links ul li a {
+    font-size: 15px;
+  }
+  #mainheader h1 {
+    font-size: 30px;
+    color: #fff;
+  }
+  .nav-links ul {
+    flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer p {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .container {
+    width: 80%;
+  }
+  .haku {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #otsikko {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 768px) and (orientation: portrait) {
+  .header {
+    min-height: 120vh;
+    overflow-x: hidden;
+  }
+  .nav-links ul li {
+    display: block;
+    text-align: center;
+  }
+  .nav-links ul li a {
+    font-size: 15px;
+  }
+  #mainheader h1 {
+    font-size: 35px;
+    color: #fff;
+  }
+  .nav-links ul {
+    flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer p {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .container {
+    width: 80%;
+  }
+  .haku {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #otsikko {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) and (orientation: portrait) {
+  #otsikko {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header {
+    min-height: 120vh;
+    overflow-x: hidden;
+  }
+  .nav-links ul li {
+    display: block;
+    text-align: center;
+  }
+  .nav-links ul li a {
+    font-size: 30px;
+  }
+  #mainheader h1 {
+    font-size: 55px;
+    color: #fff;
+  }
+  .nav-links ul {
+    flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer p {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .container {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  #otsikko {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header {
+    min-height: 200vh;
+  }
+  .nav-links ul li {
+    display: block;
+    text-align: center;
+  }
+  .nav-links ul li a {
+    font-size: 15px;
+  }
+  #mainheader h1 {
+    font-size: 25px;
+    color: #fff;
+  }
+  .nav-links ul {
+    flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer p {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .container {
+    width: 80%;
+  }
+  .haku {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  #otsikko {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header {
+    min-height: 200vh;
+  }
+  .nav-links ul li {
+    display: block;
+    text-align: center;
+  }
+  .nav-links ul li a {
+    font-size: 15px;
+  }
+  #mainheader h1 {
+    font-size: 35px;
+    color: #fff;
+  }
+  .nav-links ul {
+    flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer p {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .container {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  .container {
+    width: 80%;
+  }
+  .header {
+    min-height: 120vh;
+  }
+}
+@media only screen and (min-width: 1200px) and (orientation: landscape) {
+  .container {
+    width: 70%;
+  }
+}
