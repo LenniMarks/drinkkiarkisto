@@ -8,7 +8,7 @@ $database = "tietosisalto";
 $conn = mysqli_connect($server, $user, $pass, $database);
     
 if (!$conn) {
-    die("<script>alert('Yhteys epÃ¤onnistui.')</script>");
+    die();
 }
 
 ?>
